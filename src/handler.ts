@@ -12,9 +12,6 @@ export const handlerFn = async (
 ) => {
   const body = event.body ? JSON.parse(event.body) : null;
 
-  console.log(body);
-  // Your handler logic here
-
   if (!body) {
     return {
       statusCode: 400,
