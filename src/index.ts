@@ -20,5 +20,6 @@ const someMidlleWare = () => {
  return {
  before: beforeMiddleware,
  after: afterMiddleware
+  }
 }
 */
