@@ -10,4 +10,15 @@ export const handler = middy<
   //.use(someMiddleWare())
   .handler(handlerFn);
 
-// const someMidlleWare = (request: ApiGatewayProxyEvent) => {}
+/*
+const someMidlleWare = () => {
+  const beforeMiddleware = (request) => {
+  }
+  const afterMiddleware = (request) => {
+ }
+
+ return {
+ before: beforeMiddleware,
+ after: afterMiddleware
+}
+*/
