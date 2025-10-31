@@ -5,4 +5,21 @@ import { APIGatewayProxyEvent, APIGatewayProxyResult } from "aws-lambda";
 export const handler = middy<
   APIGatewayProxyEvent,
   APIGatewayProxyResult
->().handler(handlerFn);
+>()
+  // Insert your middleware here
+  //.use(someMiddleWare())
+  .handler(handlerFn);
+
+/*
+const someMidlleWare = () => {
+  const beforeMiddleware = (request) => {
+  }
+  const afterMiddleware = (request) => {
+ }
+
+ return {
+ before: beforeMiddleware,
+ after: afterMiddleware
+  }
+}
+*/
